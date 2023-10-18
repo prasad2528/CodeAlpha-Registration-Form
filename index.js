@@ -28,21 +28,23 @@ document.addEventListener("DOMContentLoaded", function() {
         cell5.innerHTML = gender;
         cell6.innerHTML = skills;
 
-        // Clear the form after submission
-        button.addEventListener("click", function(event) {
-            event.preventDefault();
-            form.reset();
-            // Clear the table by resetting its innerHTML
-            table.innerHTML = `
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Work Status</th>
-                    <th>Mobile Number</th>
-                    <th>Gender</th>
-                    <th>Skills</th>
-                </tr>`;
-        });
+        form.reset();
 
     });
+    // Clear the form after submission
+    button.addEventListener("click", function(event) {
+        event.preventDefault();
+        // Clear the table by resetting its innerHTML
+        table.innerHTML = `
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Work Status</th>
+                <th>Mobile Number</th>
+                <th>Gender</th>
+                <th>Skills</th>
+            </tr>`;
+    });
+
+
 });
